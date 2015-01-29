@@ -6,6 +6,7 @@
 
 
 import wave, os
+import perfectpitch
 
 # construct training data, without preprocessing
 
@@ -32,5 +33,5 @@ for fd in folders:
 train_accuracy, test_accuracy = perfectpitch.train(X0,y)
 
 # print performance
-print "Accuracy: %0.2f " % train_accuracy
-print "Accuracy: %0.2f " % test_accuracy
+print "Accuracy: " + str(train_accuracy)
+print "Accuracy: " + str(test_accuracy)
